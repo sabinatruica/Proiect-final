@@ -27,12 +27,14 @@ nume VARCHAR(50),
 email VARCHAR(200),
 numar_telefon VARCHAR(20)
 );
+
 CREATE table Comenzi (
 comanda_id INT PRIMARY KEY,
 client_id INT,
 data_comanda DATE,
 FOREIGN KEY (client_id) REFERENCES Clienti(id)
 );
+
 CREATE table Produse (
 produs_id INT PRIMARY KEY,
 nume_produs VARCHAR(100),
